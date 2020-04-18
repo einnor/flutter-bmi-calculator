@@ -22,12 +22,14 @@ class _InputPageState extends State<InputPage> {
     if (gender == 1) {
       if (maleCardColor == inactiveCardColor) {
         maleCardColor = activeCardColor;
+        femaleCardColor = inactiveCardColor;
       } else {
         maleCardColor = inactiveCardColor;
       }
     } else if (gender == 2) {
       if (femaleCardColor == inactiveCardColor) {
         femaleCardColor = activeCardColor;
+        maleCardColor = inactiveCardColor;
       } else {
         femaleCardColor = inactiveCardColor;
       }
@@ -53,7 +55,7 @@ class _InputPageState extends State<InputPage> {
                     });
                   },
                   child: ReusableCard(
-                    color: activeCardColor,
+                    color: maleCardColor,
                     child: IconContent(
                       icon: FontAwesomeIcons.mars,
                       label: 'MALE',
@@ -69,7 +71,7 @@ class _InputPageState extends State<InputPage> {
                     });
                   },
                   child: ReusableCard(
-                    color: activeCardColor,
+                    color: femaleCardColor,
                     child: IconContent(
                       icon: FontAwesomeIcons.venus,
                       label: 'FEMALE',
