@@ -174,7 +174,20 @@ class _InputPageState extends State<InputPage> {
                       Text(
                         age.toString(),
                         style: kNumberTextStyle,
-                      )
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          RoundIconButton(
+                            icon: FontAwesomeIcons.minus,
+                            onPress: () {
+                              setState(() {
+                                age--;
+                              });
+                            },
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                 ),
