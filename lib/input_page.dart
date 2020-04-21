@@ -128,6 +128,10 @@ class _InputPageState extends State<InputPage> {
                         'WEIGHT',
                         style: kLabelTextStyle,
                       ),
+                      Text(
+                        weight.toString(),
+                        style: kNumberTextStyle,
+                      ),
                     ],
                   ),
                 ),
