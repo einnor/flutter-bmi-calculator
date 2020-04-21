@@ -171,6 +171,10 @@ class _InputPageState extends State<InputPage> {
                         'AGE',
                         style: kLabelTextStyle,
                       ),
+                      Text(
+                        age.toString(),
+                        style: kNumberTextStyle,
+                      )
                     ],
                   ),
                 ),
