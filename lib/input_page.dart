@@ -178,9 +178,13 @@ class _InputPageState extends State<InputPage> {
 }
 
 class RoundIconButton extends StatelessWidget {
+  RoundIconButton({this.child});
+
+  final Widget child;
   @override
   Widget build(BuildContext context) {
     return RawMaterialButton(
+      child: child,
       elevation: 6.0,
       onPressed: () {},
       constraints: BoxConstraints.tightFor(
