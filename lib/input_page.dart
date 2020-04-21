@@ -186,6 +186,14 @@ class _InputPageState extends State<InputPage> {
                               });
                             },
                           ),
+                          RoundIconButton(
+                            icon: FontAwesomeIcons.plus,
+                            onPress: () {
+                              setState(() {
+                                age++;
+                              });
+                            },
+                          ),
                         ],
                       ),
                     ],
