@@ -34,6 +34,10 @@ class ResultsPage extends StatelessWidget {
                     'Normal',
                     style: kResultTextStyle,
                   ),
+                  Text(
+                    '18.3',
+                    style: kBMITextStyle,
+                  ),
                 ],
               ),
             ),
